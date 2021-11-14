@@ -6,12 +6,12 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
 
-const App = () => {
-
+function App() {
+    // Pseudo server
     const data = [
-        { name: 'Alex M.', salary: 800, increase: false },
-        { name: 'John S.', salary: 3000, increase: true },
-        { name: 'Edward R.', salary: 5000, increase: false },
+        { name: 'John S.', salary: 800, increase: false },
+        { name: 'Alex M.', salary: 3000, increase: true },
+        { name: 'Carl W.', salary: 5000, increase: false },
     ];
 
     return (
@@ -27,6 +27,6 @@ const App = () => {
             <EmployeesAddForm />
         </div>
     );
-};
+}
 
 export default App;

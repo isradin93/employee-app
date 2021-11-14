@@ -1,13 +1,14 @@
-import EmployeesListItem from '../employees-list-item/employees-list-item';
+import EmployeesListItem from "../employees-list-item/employees-list-item";
 
 import './employees-list.css';
 
 const EmployeesList = ({ data }) => {
-
+    console.log(data);
     const elements = data.map(item => {
+        console.log(item);
         return (
-            // <EmployeesListItem name={item.name} salary{item.salary}/>
-            <EmployeesListItem {...item} /> // Short version with spread operator
+            <EmployeesListItem {...item} />
+            // <EmployeesListItem name={item.name} salary={item.salary} />
         );
     });
 
@@ -15,7 +16,7 @@ const EmployeesList = ({ data }) => {
         <ul className="app-list list-group">
             {elements}
         </ul>
-    );
-};
+    )
+}
 
 export default EmployeesList;
