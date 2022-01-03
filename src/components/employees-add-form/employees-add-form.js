@@ -11,6 +11,7 @@ class EmployeesAddForm extends Component {
         };
     }
 
+    // 1 method for 2 inputs
     handleInputChange = e => {
         this.setState({
             [e.target.name]: e.target.value
